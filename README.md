@@ -35,16 +35,17 @@ In this project, we set up and run a database using Docker and MySQL Workbench. 
 2. Replace ***my-secret-pw*** with your own password (optional)
 3. Remove ***:tag*** to download latest version of MySQL image
 4. Add ***-p 3306:3306*** to open the port from the docker container
-***docker run --name mysql-image -p 3306:3306 -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql***
+- ***docker run --name mysql-image -p 3306:3306 -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql***
 
 <b> Log In to Docker and Download Image to Docker </b>
 1. Open terminal and run command: ***docker login***
 2. Enter Docker Hub username and password
-3. Run command: ***docker run --name mysql-image -p 3306:3306 -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql***
+3. Run command:
+***docker run --name mysql-image -p 3306:3306 -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql***
     - This can take a few minutes to run
     - When it finishes the image will start up
     - Will result in an error if the image name already exists
-4. Run command: ***docker ps*** to check image status
+5. Run command: ***docker ps*** to check image status
    - Shows a list of all images that are running
    - Statuses include Starting, Healthy, Up in X seconds, Etc.
   
@@ -62,7 +63,7 @@ In this project, we set up and run a database using Docker and MySQL Workbench. 
 
 <b> Set Up Database and Query Data</b>
 1. Open the SQL Editor
-2. Run the queries below one at a time:
+2. Run the SQL queries below one at a time:
     - ***CREATE DATABASE db;***
     - ***USE db;***
     - ***CREATE TABLE employees(id int not null, name text, primary key (id));***
