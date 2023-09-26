@@ -35,7 +35,6 @@ In this project, we set up and run a MySQL database using Docker and MySQL Workb
 2. Replace ***my-secret-pw*** with your own password (optional)
 3. Remove ***:tag*** to download latest version of MySQL image
 4. Add ***-p 3306:3306*** to open the port from the docker container
-- ***docker run --name mysql-image -p 3306:3306 -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql***
 
 <b> Log In to Docker and Download Image to Docker </b>
 1. Open terminal and run command: ***docker login***
