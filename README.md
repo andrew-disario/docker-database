@@ -3,7 +3,8 @@
 <img src="https://github.com/andrew-disario/docker-database/blob/main/docker_mysqlworkbench_logos.png?raw=true" height="75%" width="75%" alt="docker_mysqlworkbench"/>
 <br />
 In this project, we set up and run a MySQL database using Docker and MySQL Workbench. Docker is an open platform for developing, shipping, and running applications. MySQL Workbench is a unified visual tool for database architects, developers, and DBAs that provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, backup, and much more. 
-<h2>(Part 1) Set Up Docker</h2>
+
+<h2>Part I - Set Up Docker</h2>
 
 <b> Download and Install Docker </b>
 1. Go to [docker.com](https://www.docker.com/) and select **Get Started**
@@ -14,7 +15,7 @@ In this project, we set up and run a MySQL database using Docker and MySQL Workb
 1. Go to [hub.docker.com](https://www.hub.docker.com/) and select **Sign Up**
 2. Enter your information, choose a plan and verify your email address
 
-<h2>(Part 2) Download MySQL Image and Run Docker</h2>
+<h2>Part II - Download MySQL Image and Run Docker</h2>
 
 <b> Download and Install Docker </b>
 1. Go to [hub.docker.com](https://www.hub.docker.com/), search for ***"mysql"*** and select the **mysql** result
@@ -50,7 +51,7 @@ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
    - Shows a list of all images that are running
    - Statuses include Starting, Healthy, Up in X seconds, Etc.
   
-<h2>(Part 3) Connect MySQL Workbench and Set Up Database </h2>
+<h2>Part III - Connect MySQL Workbench and Set Up Database </h2>
 
 <b> Connect Using MySQL Workbench </b>
 1. Select **Create a New Connection** and enter connection details (available at [Docker Hub / mysql](https://hub.docker.com/_/mysql)):
