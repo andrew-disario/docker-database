@@ -3,32 +3,32 @@
 <img src="https://github.com/andrew-disario/docker-database/blob/main/docker_mysqlworkbench_logos.png?raw=true" height="75%" width="75%" alt="docker_mysqlworkbench"/>
 <br />
 In this project, we set up and run a MySQL database using Docker and MySQL Workbench. Docker is an open platform for developing, shipping, and running applications. MySQL Workbench is a unified visual tool for database architects, developers, and DBAs that provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, backup, and much more. 
-<h2>Part 1 - Set Up Docker</h2>
+<h2>(Part 1) Set Up Docker</h2>
 
 <b> Download and Install Docker </b>
-1. Go to [docker.com](https://www.docker.com/) and select ***"Get Started"***
-2. Select ***"Docker Desktop"*** and choose the right version for your machine
+1. Go to [docker.com](https://www.docker.com/) and select **Get Started**
+2. Select **Docker Desktop** and choose the right version for your machine
 3. Install Docker when the download finishes
 
 <b> Create Docker Hub Account </b>
-1. Go to [hub.docker.com](https://www.hub.docker.com/) and select ***"Sign Up"***
+1. Go to [hub.docker.com](https://www.hub.docker.com/) and select **Sign Up**
 2. Enter your information, choose a plan and verify your email address
 
-<h2>Part 2 - Download MySQL Image and Run Docker</h2>
+<h2>(Part 2) Download MySQL Image and Run Docker</h2>
 
 <b> Download and Install Docker </b>
-1. Go to [hub.docker.com](https://www.hub.docker.com/), search for ***"mysql"*** and select the ***"mysql"*** result
-2. Copy the command from the ***"How to use this image"*** section
+1. Go to [hub.docker.com](https://www.hub.docker.com/), search for ***"mysql"*** and select the **mysql** result
+2. Copy the command from the **How to use this image** section
    - ```docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag```
 
 <b> Understand the Docker Run Command </b>
-- ```docker run``` :: Runs a command in a new container, pulling the image if needed
-- ```--name some-mysql``` :: Names the image "some-mysql"
-- ```-e``` :: Refers to environment variables
-  - ```MYSQL_ROOT_PASSWORD=my-secret-pw``` :: Sets root password to "my-secret-pw"
-- ```-d``` :: Activates detached mode
-- ```mysql``` :: Paths to image on docker hub
-  - ```:tag``` :: Specifies version "tag"
+- ```docker run``` Runs a command in a new container, pulling the image if needed
+- ```--name some-mysql``` Names the image "some-mysql"
+- ```-e``` Refers to environment variables
+  - ```MYSQL_ROOT_PASSWORD=my-secret-pw``` Sets root password to "my-secret-pw"
+- ```-d``` Activates detached mode
+- ```mysql``` Paths to image on docker hub
+  - ```:tag``` Specifies version "tag"
  
 <b> Adjust the Docker Command </b>
 1. Replace ```some-mysql``` with your own image name (optional)
@@ -48,17 +48,17 @@ In this project, we set up and run a MySQL database using Docker and MySQL Workb
    - Shows a list of all images that are running
    - Statuses include Starting, Healthy, Up in X seconds, Etc.
   
-<h2>Part 3 - Connect MySQL Workbench and Set Up Database </h2>
+<h2>(Part 3) Connect MySQL Workbench and Set Up Database </h2>
 
 <b> Connect Using MySQL Workbench </b>
-1. Select ***"Create a New Connection"*** and enter connection details (available at [Docker Hub - mysql](https://hub.docker.com/_/mysql)):
-    - Enter Connection Name: ***Local Docker***
-    - Enter Hostname: ***Local Host***
-    - Enter port: ***3306***
-    - Enter Username: ***root***
-    - Enter Password: ***my-secret-pw*** (or whatever password you chose)
-2. Select ***"Test Connection"*** to confirm connection
-3. Select ***"Ok"***
+1. Select **Create a New Connection** and enter connection details (available at [Docker Hub / mysql](https://hub.docker.com/_/mysql)):
+    - Enter connection name: ```Local Docker```
+    - Enter hostname: ```LocalHost``` or ```127.0.0.1```
+    - Enter port: ```3306```
+    - Enter username: ```root```
+    - Enter password: ```my-secret-pw``` (or the password you chose)
+2. Select **Test Connection** to confirm connection
+3. Select **Ok**
 
 <b> Set Up Database and Query Data</b>
 1. Open the SQL Editor
