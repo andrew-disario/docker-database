@@ -19,7 +19,9 @@ In this project, we set up and run a MySQL database using Docker and MySQL Workb
 <b> Download and Install Docker </b>
 1. Go to [hub.docker.com](https://www.hub.docker.com/), search for ***"mysql"*** and select the **mysql** result
 2. Copy the command from the **How to use this image** section
-   - ```docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag```
+```
+docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+```
 
 <b> Understand the Docker Run Command </b>
 - ```docker run``` Runs a command in a new container, pulling the image if needed
