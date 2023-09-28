@@ -1,4 +1,4 @@
-<h1>Docker Database</h1>
+<h1>Set Up a Database with Docker and MySQL Workbench</h1>
 <p align="center">
 <img src="https://github.com/andrew-disario/docker-database/blob/main/docker_mysqlworkbench_logos.png?raw=true" height="75%" width="75%" alt="docker_mysqlworkbench"/>
 <br />
